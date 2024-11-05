@@ -1,0 +1,15 @@
+@font-face {
+    font-family:"Automn";
+    src: url("./Autumn.ttf");
+}
+body {
+    color: black;
+    font-size: 2rem;
+    background-color:lightcoral;
+    background-image: url("../asset/fonde.jpg");
+    font-family:"Automn";
+    -webkit-text-stroke: 1px white;
+}
+header{
+background-color: antiquewhite;
+}
