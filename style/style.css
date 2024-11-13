@@ -25,9 +25,18 @@ header{
     background-color: #dcb583;
     height: 20vh;
     padding: 20px;
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
 }
 
-h1, h2{
+main{
+
+position: relative;
+top : 20vh;
+}
+
+h1, h2 {
 width:fit-content;
 }
 
@@ -51,7 +60,7 @@ main {
     align-items: center;
 }
 
-article{
+article {
 width: 60%;
 background-color: rgba(255, 255, 255, 0.388);
 padding: 15px;
@@ -60,11 +69,69 @@ box-shadow: black 2px 2px 5px 0px;
 margin: 2%;
 }
 
-ul{
+ul {
     margin-left: 20px;
 }
 #image {
-    height: 50vh;
-    width: 110%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: end;
+
+    aspect-ratio: 1904/640;
+    width: 100vw;
     background-image: url(../asset/library.png);
+background-repeat: no-repeat;
+background-size: 100%;
+    background-attachment: fixed;
+    background-position-y: 22vh;
 }
+
+#image>h2 {
+font-size: 5rem;
+padding-right: 5vw;
+color: rgb(251, 224, 186);
+}
+
+nav {
+  
+    display:flex;
+   flex-direction:column;
+   justify-content:center;
+   justify-content: space-evenly;
+  align-items: center;
+
+    width: 19vw;
+    height: 78vh;
+background-color: #6b4c25;
+position:fixed;
+top: 20vh;
+color:#dcb583;
+z-index: 5;
+}
+
+.bouton {
+display: block;
+text-decoration: none;
+width: 80%;
+height: 5vh;
+
+background-color: rgb(251, 224, 186) ;
+color:#6b4c25;
+text-align: center;
+padding-top: 7px;
+border-radius: 2.5vh;
+background-color: rgb(251, 224, 186);
+color: #6b4c25;
+box-shadow: #6b4c25 2px 2px 5px 0;
+transition: box-shadow 250ms;
+transition: background-color 1000ms, color 100ms, border 2000ms;
+}
+
+.bouton:hover{ 
+background-color:#6b4c25;
+color: rgb(251, 224, 186);
+border: rgb(251, 224, 186) 2px solid;
+box-shadow: 0 0 2px 0;
+}
+
